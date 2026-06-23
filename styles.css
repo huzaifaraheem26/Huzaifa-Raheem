@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -35,15 +34,15 @@ body {
 
 
 :root {
-    --primary: #4F46E5;
+    --primary: #250f27;
     --secondary: #111827;
     --background: #F9FAFB;
     --card: #FFFFFF;
-    --accent: #6366F1;
+    --accent: #250f27;
     --text-light: #6B7280;
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
     --shadow-md: 0 10px 25px rgba(0,0,0,0.1);
---shadow-lg: 0 10px 20px rgba(0,0,0,0.12);
+    --shadow-lg: 0 10px 20px rgba(0,0,0,0.12);
     --border-radius: 14px;
 }
 
@@ -319,14 +318,7 @@ h1, h2, h3 {
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background: var(--primary);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
 }
 
 .timeline-item {
@@ -450,7 +442,7 @@ h1, h2, h3 {
 
 
 .footer {
-    background: var(--secondary);
+    background: #250f27;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -469,7 +461,8 @@ h1, h2, h3 {
 }
 
 .footer-link:hover {
-    color: var(--accent);
+    color: white;
+    cursor: default;
 }
 
 
@@ -568,4 +561,22 @@ h1, h2, h3 {
     .skills-grid, .certs-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+.footer p {
+    color: white;
+}
+
+.footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer * {
+    color: white !important;
+}
+
+.footer-link {
+    color: white !important;
 }
